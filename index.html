@@ -3,70 +3,246 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-
-      <!--=============== SWIPER CSS ===============-->
-      <link rel="stylesheet" href="">
-
-      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
       <link rel="stylesheet" href="assets/css/styles.css">
 
-      <title>Responsive portfolio website - Bedimcode</title>
+      <title>PT portfolio</title>
    </head>
    <body>
-      <!--==================== HEADER ====================-->
       <header class="header" id="header">
-         
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo">PT</a>
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="about.html" class="nav__link">Sobre mi</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="work.html" class="nav__link">Proyectos</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="contact.html" class="button">Contacto</a>
+                  </li>
+               </ul>
+
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+            <div class="nav__actions">
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-apps-2-line"></i>
+               </div>
+            </div>
+         </nav>
       </header>
 
-      <!--==================== MAIN ====================-->
+
       <main class="main">
-         <!--==================== HOME ====================-->
          <section class="home section">
-            
+            <div class="home__rectangle"></div>
+            <div class="home__container container grid">
+               <div class="home__perfil perfil">
+                  <div class="perfil__content">
+                     <img src="assets/img/Foto-principal.png" alt="image" class="perfil__img">
+                  </div>
+               </div>
+               <div class="home__content grid">
+                  <div class="home__data grid">
+                     <h1 class="home__name">Paz Torres</h1>
+
+                     <h2 class="home__profession">Desarrollador web</h2>
+
+                     <div class="home__social">
+                        <a href="https://github.com/PazTorr3s" target="_blank" class="home__social-link">
+                           <i class="ri-github-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/paz-torres-53905b31b/" target="_blank" class="home__social-link">
+                           <i class="ri-linkedin-box-fill"></i>
+                        </a>
+                        <a href="https://wa.me/56945949291" target="_blank" class="home__social-link">
+                           <i class="ri-whatsapp-fill"></i>
+                        </a>
+                     </div>
+                  </div>
+                  <a href="assets/pdf/CV Paz Torres.pdf" download="" class="home__button button">Descargar CV</a>
+               </div>
+            </div>
          </section>
 
-         <!--==================== SERVICES ====================-->
-         <section class="services section">
+
+         <section class="about section">
+            <h2 class="section__title">Mi información <br> personal</h2>
             
+            <div class="about__container about__page container grid">
+               <div class="about__perfil">
+                  <div class="about__data grid">
+                     <div class="about__info grid">
+                        <h1 class="about__name">Paz Torres</h1>
+                        <h2 class="about__profession">Educación</h2>
+                        <ul class="about__list">
+                           <li>
+                              <h4 class="about__description">Inacap - Técnico Analista programador</h4>
+                              <p>2023 - 2025</p>
+                           </li><br>
+                           <li>
+                              <h4 class="about__description">Liceo Tecnico Eugenia Subercaseaux - Enseñanza media</h4>
+                              <p>2022</p>
+                           </li>
+                        </ul>
+                        
+                     </div>
+                     <a href="contact.html" class="about__button button">Contacto</a>
+                  </div>
+               </div>
+               <div class="about__content grid">
+                  <div class="about__skills">
+                     <h3 class="about__skills-title">Mis Habilidades</h3>
+                     <p class="about__description">Soy una <b>desarrolladora en formación</b> apasionada por la creación de <b>websites interactivos y funcionales.</b><br> Me encanta aprender nuevas tecnologías y mejorar mis habilidades constantemente. Aquí están algunas de las <b>tecnologías</b> con las que trabajo:</p>
+                     </p><br>
+                     <div class="about__skills-content grid">
+                        
+                        <img src="assets/img/about-html.svg" alt="image" class="about__skills-img">
+                        <img src="assets/img/about-css.svg" alt="image" class="about__skills-img">
+                        <img src="assets/img/about-javascript.svg" alt="image" class="about__skills-img">
+                        <img src="assets/img/about-git.svg" alt="image" class="about__skills-img">
+                        <img src="assets/img/about-github.svg" alt="image" class="about__skills-img">
+                        <img src="assets/img/about-react.svg" alt="image" class="about__skills-img">
+                     </div>
+                  </div>
+               </div>
+            </div>
          </section>
 
-         <!--==================== WORK ====================-->
+
          <section class="work section">
-            
+            <h2 class="section__title">Mis trabajos</h2>
+
+            <div class="work__container work__page container grid">
+               <article class="work__card">
+                  <a href="projects/proyecto1.html" target="_blank" class="work__link">
+                     <img src="assets/img/proyecto1.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">Juego - 2048</h2>
+               
+               </article>
+
+               <article class="work__card">
+                  <a href="projects/proyecto2.html" target="_blank" class="work__link">
+                     <img src="assets/img/proyecto2.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">Gastos semanales</h2>
+               </article>
+
+               <article class="work__card">
+                  <a href="projects/proyecto3.html" target="_blank" class="work__link">
+                     <img src="assets/img/proyecto3.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">Citas Veterinaria</h2>
+               </article>
+
+               <article class="work__card">
+                  <a href="projects/proyecto4.html" target="_blank" class="work__link">
+                     <img src="assets/img/proyecto4.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">App Clima - API</h2>
+               </article>
+
+               <article class="work__card">
+                  <a href="projects/proyecto5.html" target="_blank" class="work__link">
+                     <img src="assets/img/proyecto5.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">Calculadora de propinas</h2>
+               </article>
+
+               <article class="work__card">
+                  <a href="projects/proyecto6.html" target="_blank" class="work__link">
+                     <img src="assets/img/proyecto6.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">Huella de Carbono</h2>
+               </article>
+            </div>
          </section>
 
-         <!--==================== TESTIMONIAL ====================-->
-         <section class="testimonial section">
-            
-         </section>
-
-         <!--==================== CONTACT ====================-->
          <section class="contact section">
-            
+            <div class="contact__container container grid">
+               <h2 class="section__title">Contactate <br> conmigo</h2>
+
+               <a href="contact.html" class="contact__button button">Contactame</a>
+            </div>
          </section>
       </main>
 
-      <!--==================== FOOTER ====================-->
       <footer class="footer">
-         
+         <div class="footer__container container grid">
+            <div class="footer__content grid">
+               <a href="index.html" class="footer__logo">Paz Torres</a>
+
+               <ul class="footer__links">
+                  <li>
+                     <a href="about.html" class="footer__link">Sobre mi</a>
+                  </li>
+                  <li>
+                     <a href="work.html" class="footer__link">Proyectos</a>
+                  </li>
+                  <li>
+                     <a href="contact.html" class="footer__link">Contacto</a>
+                  </li>
+               </ul>
+
+               <div class="footer__social">
+                  <a href="https://github.com/PazTorr3s" target="_blank" class="footer__social-link">
+                     <i class="ri-github-fill"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/paz-torres-53905b31b/" target="_blank" class="footer__social-link">
+                     <i class="ri-linkedin-box-fill"></i>
+                  </a>
+
+                  <a href="https://wa.me/56945949291" target="_blank" class="footer__social-link">
+                     <i class="ri-whatsapp-fill"></i>
+                  </a>
+
+                  <a href="https://www.instagram.com/fishii_b/" target="_blank" class="footer__social-link">
+                     <i class="ri-instagram-fill"></i>
+                  </a>   
+               </div>
+            </div>
+
+            <span class="footer__copy">
+               &#169; Todos los derechos reservados
+            </span>
+         </div>
       </footer>
+      <a href="" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
 
-      <!--========== SCROLL UP ==========-->
 
 
-      <!--=============== MAIN JS ===============-->
       <script src="assets/js/main.js"></script>
-
-      <!--=============== SWIPER JS ===============-->
-      <script src=""></script>
-
-      <!--=============== INDEX JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
       <script src="assets/js/index.js"></script>
    </body>
 </html>

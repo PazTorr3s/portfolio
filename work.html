@@ -3,34 +3,155 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
-      <!--=============== REMIXICONS ===============-->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
-
-      <!--=============== CSS ===============-->
       <link rel="stylesheet" href="assets/css/styles.css">
-
-      <title>Work - Responsive portfolio website - Bedimcode</title>
+      <title>PT portfolio - Projectos</title>
    </head>
    <body>
-      <!--==================== HEADER ====================-->
-      
+      <header class="header header-pages" id="header">
+         <nav class="nav container">
+            <a href="index.html" class="nav__logo">Paz</a>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="index.html" class="nav__link">Home</a>
+                  </li>
 
-      <!--==================== MAIN ====================-->
+                  <li class="nav__item">
+                     <a href="about.html" class="nav__link">Sobre mi</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="work.html" class="nav__link">Proyectos</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="contact.html" class="button">Contacto</a>
+                  </li>
+               </ul>
+
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+            <div class="nav__actions">
+               <i class="ri-moon-line change-theme" id="theme-button"></i>
+               <div class="nav__toggle" id="nav-toggle">
+                  <i class="ri-apps-2-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+
       <main class="main">
-         <!--==================== WORK ====================-->
          <section class="work section">
-            
+            <h2 class="section__title">Mis trabajos</h2>
+
+            <div class="work__container work__page container grid">
+               <article class="work__card">
+                  <a href="projects/proyecto1.html" target="_blank" class="work__link">
+                     <img src="assets/img/proyecto1.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">Juego - 2048</h2>
+               
+               </article>
+
+               <article class="work__card">
+                  <a href="projects/proyecto2.html" target="_blank" class="work__link">
+                     <img src="assets/img/proyecto2.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">Gastos semanales</h2>
+               </article>
+
+               <article class="work__card">
+                  <a href="projects/proyecto3.html" target="_blank" class="work__link">
+                     <img src="assets/img/proyecto3.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">Citas Veterinaria</h2>
+               </article>
+
+               <article class="work__card">
+                  <a href="projects/proyecto4.html" target="_blank" class="work__link">
+                     <img src="assets/img/proyecto4.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">App Clima - API</h2>
+               </article>
+
+               <article class="work__card">
+                  <a href="projects/proyecto5.html" target="_blank" class="work__link">
+                     <img src="assets/img/proyecto5.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">Calculadora de propinas</h2>
+               </article>
+
+               <article class="work__card">
+                  <a href="projects/proyecto6.html" target="_blank" class="work__link">
+                     <img src="assets/img/proyecto6.png" alt="image" class="work__img">
+                     <i class="ri-arrow-right-circle-line work__icon"></i>
+                  </a>
+
+                  <h2 class="work__title">Huella de carbono</h2>
+               </article>
+            </div>
          </section>
       </main>
 
-      <!--==================== FOOTER ====================-->
-      
 
-      <!--=============== MAIN JS ===============-->
+
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <div class="footer__content grid">
+               <a href="index.html" class="footer__logo">Paz Torres</a>
+
+               <ul class="footer__links">
+                  <li>
+                     <a href="about.html" class="footer__link">Sobre mi</a>
+                  </li>
+                  <li>
+                     <a href="work.html" class="footer__link">Proyectos</a>
+                  </li>
+                  <li>
+                     <a href="contact.html" class="footer__link">Contacto</a>
+                  </li>
+               </ul>
+
+               <div class="footer__social">
+                  <a href="https://github.com/PazTorr3s" target="_blank" class="footer__social-link">
+                     <i class="ri-github-fill"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/in/paz-torres-53905b31b/" target="_blank" class="footer__social-link">
+                     <i class="ri-linkedin-box-fill"></i>
+                  </a>
+
+                  <a href="https://wa.me/56945949291" target="_blank" class="footer__social-link">
+                     <i class="ri-whatsapp-fill"></i>
+                  </a>
+
+                  <a href="https://www.instagram.com/fishii_b/" target="_blank" class="footer__social-link">
+                     <i class="ri-instagram-fill"></i>
+                  </a>   
+               </div>
+            </div>
+
+            <span class="footer__copy">
+               &#169; Todos los derechos reservados
+            </span>
+         </div>
+      </footer>
+
+
       <script src="assets/js/main.js"></script>
    </body>
 </html>
